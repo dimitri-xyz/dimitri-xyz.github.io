@@ -65,15 +65,28 @@ In this decreasing payments scheme, the monthly payments decrease linearly by \\
 
   The initial balance is \\(B_0\\). After the first month, the remaining balance will be
 
- \\(B\_1 = r B\_0 - P \\\)
+  $$ B_1 = r B_0 - P $$
 
   The balance at the end of the second month is
 
-\\(B\_2 = r B\_1 - P = r ( r B\_0 - P) - P = r^2 B\_0 - r P - P\\)
+  $$ \begin{align}
+
+   B_2 & = r B_1 - P \\
+       & = r ( r B_0 - P) - P \\
+       & = r^2 B_0 - r P - P
+
+  \end{align} $$
 
   At the end of the third month
 
-\\(B\_3 = r B\_2 - P = r ( r B\_1 - P) - P = r ( r ( r B\_0 - P ) - P) - P) = r^3 B_0 - r^2 P - r P - P\\)
+ $$ \begin{align}
+
+  B_3 & = r B_2 - P \\
+       & = r ( r B_1 - P) - P \\
+       & = r ( r ( r B_0 - P ) - P) - P) \\
+       & = r^3 B_0 - r^2 P - r P - P
+
+ \end{align} $$
 
 In short, after each month the remaining balance is being multiplied by the gross interest rate \\(r\\) and then a payment of \\(P\\) is subtracted. At the end of \\(n\\) months the home owner will have paid his mortgage and we will have
 
@@ -97,4 +110,4 @@ Finally, rearranging the formula for \\(P\\)
 
   Don&#8217;t fool yourself into thinking buying a home is always a good investment because you will not be paying rent. Calculate how much interest you will be paying, what tax breaks you will get, the extra costs of owning a property (recurring property tax, insurance, maintenance and depreciation and the one-time costs of closing a deal) add the opportunity cost of not having savings and compare tall hat to your rent payments before making a decision. The $816 dollars above only take into account the interest itself.
 
-  <em>This entry has been updated to include the opportunity cost and make explicit that the calculation above does not include all costs.</em>
+  <em>This entry has been updated to include the opportunity cost and make explicit that the calculation above does not include all costs. The layout has also been changed.</em>
