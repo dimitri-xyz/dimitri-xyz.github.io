@@ -7,7 +7,7 @@
 
 # Site settings
 title: "Dimitri DeFigueiredo Ph.D."
-email: defigueiredo@ucdavis.edu
+email: blog@dimitri.xyz
 description: Computing, finance, security and collaborative decisions
 baseurl: "" # the subpath of your site, e.g. /blog
 # "http://dimitri-xyz.github.io" # the base hostname & protocol for your site
