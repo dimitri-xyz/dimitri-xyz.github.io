@@ -1,6 +1,7 @@
 ---
 date: 2010-05-15T16:29:01+00:00
 layout: page
+mathjax: true
 ---
 The sum \\\(S\\) of the geometric progression with \\(n\\) terms, ratio \\(r\\) and first term \\(a\\)
 

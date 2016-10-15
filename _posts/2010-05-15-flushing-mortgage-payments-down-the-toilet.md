@@ -3,6 +3,7 @@ title: Flushing Mortgage Payments Down the Toilet
 date: 2010-05-15T16:41:01+00:00
 layout: post
 permalink: /2010/05/15/flushing-mortgage-payments-down-the-toilet/
+mathjax: true
 ---
 
 Nobody likes to pay rent. You never see that money again. From the point of view of the renter, paying rent is just like flushing your money down the toilet. The money is gone.
