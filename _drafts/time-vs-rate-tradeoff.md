@@ -7,7 +7,7 @@ permalink: /2016/10/13/the-time-interest-rate-tradeoff/
 There is a trade-off between the rate of return on your investments and how long you need to wait to achieve your goals. Imagine you want to have a million dollars when you retire and you can save $1000 a month. If the rate of return on your investments is 8% per year, it will take you 26 years to reach your goal of 1 million dollars. That is a long time! Could we speed this up by getting better returns? How long would it take to accumulate 1 million if your rate of return was 12% instead of 8%? You can drag the yellow marker and play with the calculator below to find out. The graph shows all the possibilities.
 
 <div id="time_vs_ror_calculator">
-    <table border="1">
+    <table border="1" style="border-radius:6px;">
         <tr><td>
             <div id="graph">
                 <svg width="400" height="200" >
