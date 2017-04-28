@@ -7,9 +7,9 @@ mathjax: true
 
 Here is a problem that appears simpler than it is. Programmers many times have at their disposal a source of random bits but need to generate uniformly distributed random integers in a given range. The immediate algorithms for doing this, using remainders or scaling lead to biased distributions. A cursory review of open source software shows that using these is a common problem. They even show up in cryptographic libraries! Usually with minor effects. If you want to learn how to do this "conversion" properly, read on.
 
-Imagine you are running a lottery. Your lottery is very simple and works like a raffle. Every week people buy lottery tickets. All tickets have the same price and at the end of the week the winner is announced. There is always a single winning ticket among all the tickets sold. This process repeats each week. Because there is always a winner the prize does not accumulate.
+Imagine you are running a simple lottery that works like a raffle. All the tickets are sold at the same price. People buy tickets throughout the week and a single winning ticket is announced at the end of the week. There is a winner every week; the total prize does not accumulate week-to-week.
 
-A basic requirement for this lottery is that every ticket must have the same chance of winning as every other ticket. In fact, this may be a legal requirement. Because they all cost the same amount, it is not fair for any ticket to have a higher chance of winning than any other ticket.
+A basic requirement for this lottery is that every ticket must have the same chance of winning as every other ticket. In fact, this may be a legal requirement. It is not fair for a ticket to have a higher chance of winning than any other ticket as they all cost the same.
 
 The number of people buying tickets changes from week to week; but no matter how many tickets are sold, the lottery must always be fair. Each week, the wining ticket must be drawn from a uniform distribution over all the tickets sold. You don't want to break the law.
 
@@ -208,8 +208,12 @@ function getRandIntInclusive(low, hi){
 var winner = getRandIntInclusive(0, 9)
 console.log(`And the winner is You! Ticket number ${winner} !`)
 ```
+(Here's a [haskell version](https://gist.github.com/dimitri-xyz/ba6f6d81a9db39d2a918fb8ecece9a76) of the same code.)
 
 That's all folks! Now, you know how to properly generate uniformly distributed random integers from random bytes. Tricky, isn't it!?
+
+*Acknowledgments: I would like to thank [Tikhon Jelvis](http://jelv.is/) for some great suggestions to improve this blog post.*
+
 
 
 
