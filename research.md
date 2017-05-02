@@ -23,6 +23,12 @@ D. DeFigueiredo, &#8220;The Case for Mobile Two-Factor Authentication&#8221;, IE
 D. DeFigueiredo, &#8220;Vulnerability Analysis of the Brazilian Payment System&#8221;, Computer Science &#8211; UC Davis, Technical Report CSE-2006-5.
 [[PDF](/my-research/SPBanalysis.pdf)]
 
+### Presentations
+
+D. DeFigueiredo, &#8220;Functional Reactive Bitcoin Trading&#8221;, [BayHac 2017](https://wiki.haskell.org/BayHac2017).
+[[Youtube](https://www.youtube.com/watch?v=ZF_eZkXwaLk)]
+[[Presentation](/my-research/Functional-Reactive-Bitcoin-Trading.pptx)]
+
 ### Media
 
 Interview at local TV station in Brazil, TV Aperipê, about computer security (in Portuguese).
