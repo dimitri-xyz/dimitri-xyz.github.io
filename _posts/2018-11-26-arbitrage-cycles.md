@@ -70,7 +70,7 @@ Once the current segment ends, \\(\frac{dT_i}{dx}\\) needs to be re-evaluated fo
 
 There is still a lot more to be done to run a profitable trading operation. For example, we still need to calculate exactly which orders to place in each market. Thankfully, this can be done through a different interpreter on the same arbitrage cycle description. We also need to take into account the probability of execution failures and other "real-world" factors, but I hope this exposition convinced you that finding arbitrage cycles is an interesting algorithmic problem. I also hope it is easy to see how important it is to clearly understand exactly which algorithmic problems we need to solve and which we can avoid (or work around).
 
-*I would like to thank Fabrício Oliveira and Balaji Venkatachalam for their many helpful suggestions to improve this post.*
+*I would like to thank Fabricio Oliveira and Balaji Venkatachalam for their many helpful suggestions to improve this post.*
 
 [^1]: [https://courses.csail.mit.edu/6.046/spring04/handouts/ps7sol.pdf](https://courses.csail.mit.edu/6.046/spring04/handouts/ps7sol.pdf)
 
