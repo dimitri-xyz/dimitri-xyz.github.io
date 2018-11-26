@@ -26,7 +26,7 @@ Assume that in a given week \\(N=10\\) tickets were sold. Using our source of ra
 const crypto = require('crypto')
 
 /* use just 4 random bits - a value from 0 to 15 */
-const randomBits = crypto.randomBytes(1).readUInt8() & 0x0F 
+const randomBits = crypto.randomBytes(1).readUInt8() & 0x0F
 const N = 10
 
 let winner = randomBits % N
@@ -47,7 +47,7 @@ Two points to note:
 1. Because \\(N = 10\\) is not a power of 2, there will *always* be some favored tickets that are more likely to win.
 2. The discrepancy between the most likely and the least likely tickets is a function of the number of random bits used. If we use \\(m\\) random bits (we used \\(m = 6\\) in the last diagram), the difference in probability between the more likely and least likely tickets is \\(1/2^m\\).
 
-The second point above means that we can make the unfairness imperceptibly small by using lots of random bits. This is good. However, the difference in probability never actually goes away. We will never generate a truly uniform distribution this way. 
+The second point above means that we can make the unfairness imperceptibly small by using lots of random bits. This is good. However, the difference in probability never actually goes away. We will never generate a truly uniform distribution this way.
 
 ### Bias from Scaling
 
@@ -156,7 +156,7 @@ We also need to make sure we have more random bits than the range of integers we
 
 We have assumed, so far, that we have a perfect source of random bits. This gave us assurance that our algorithm will (with high probability) eventually be done. However, if we have a buggy or biased source of randomness, our rejection sampling algorithm can go into an infinite loop by rejecting all samples. This should never happen with a truly random source. Actually, never is a strong word, let's just say it should not happen in the next billion years. So, we want to signal there is an error when this happens, rather than go into an infinite loop.
 
-The final version of our algorithm sets an upper bound on how many times sampling is attempted before a valid sample is found. We will set this upper bound to be 100 attempts. The probability that we need more than 100 random samples is less than \\( 2^{-100} \\), so it is more likely we have a bug in our source of randomness than that this long sequence of rejected samples actually happened by chance. 
+The final version of our algorithm sets an upper bound on how many times sampling is attempted before a valid sample is found. We will set this upper bound to be 100 attempts. The probability that we need more than 100 random samples is less than \\( 2^{-100} \\), so it is more likely we have a bug in our source of randomness than that this long sequence of rejected samples actually happened by chance.
 
 We also provide a simple utility function `getRandIntInclusive` to generate integers in an arbitrary range that *includes* the upper and lower bounds. We also made everything work sensibly when those bounds are fractional numbers: it works as long as there is an integer in the range. So that,
 
@@ -213,14 +213,3 @@ console.log(`And the winner is You! Ticket number ${winner} !`)
 That's all folks! Now, you know how to properly generate uniformly distributed random integers from random bytes. Tricky, isn't it!?
 
 *Acknowledgments: I would like to thank [Tikhon Jelvis](http://jelv.is/) for some great suggestions to improve this blog post.*
-
-
-
-
-
-
-
-
-
-
-
