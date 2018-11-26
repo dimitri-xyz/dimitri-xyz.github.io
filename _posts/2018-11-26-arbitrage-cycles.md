@@ -1,5 +1,5 @@
 ---
-title: 'Longest Simple Cycles for Fun and Profit'
+title: 'Longest simple cycles for fun and profit'
 layout: post
 permalink: /crypto-arbitrage-cycles/
 mathjax: true
