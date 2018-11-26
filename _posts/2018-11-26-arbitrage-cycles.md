@@ -27,7 +27,7 @@ To make a profit using this cycle, we would need to successfully execute 6 order
 
 ### Solving the Wrong Problem
 
-The problem we are trying to solve is very similar to but *not the same as* the problem of finding negative cycles in a directed graph. If label each edge in the graph described in the example above with the logarithm of the (buy) price, there will be an arbitrage cycle if and only if there is a negative cycle in the graph.
+The problem we are trying to solve is very similar to but *not the same as* the problem of finding negative cycles in a directed graph. If we label each edge in the graph described in the example above with the logarithm of the (buy) price, there will be an arbitrage cycle if and only if there is a negative cycle in the graph.
 
 Given the popularity of single source and all-pairs shortest path algorithms, finding negative cycles in graphs has become a textbook problem [^1]. These algorithms are fast and elegant. However, they do not do what we want.
 
@@ -60,11 +60,11 @@ Assume there are two profitable cycles in the graph \\(C_1\\) and \\(C_9\\), whi
 
 For each available cycle \\(C_i\\), we need to obtain its "transfer function" \\(T_i(x)\\). This function represents the amount we get out of the cycle when we put \\(x\\) units in. If \\(T_i(x) > x\\) for some \\(x\\), the cycle can be profitable as we can get more out than we put in.
 
-We know that any transfer function \\(T_i(x)\\) starts at the origin (you get zero when you pay zero) and is monotonically increasing (the more you pay, the more you get). Assuming all orders on the order books can be partially executed, we can also assume the \\(T_i\\) is piecewise linear and *concave* (as better prices always execute first). The concavity is very important because it gives us a simple algorithm to maximize our profit when trading in all available cycles: *water filling*.
+We know that any transfer function \\(T_i(x)\\) starts at the origin (you get zero when you pay zero) and is monotonically increasing (the more you pay, the more you get). Assuming all orders on the order books can be partially executed, we can also deduce the \\(T_i\\) are piecewise linear and *concave* (as better prices always execute first). The concavity is very important because it gives us a simple algorithm to maximize our profit when trading in all available cycles: *water filling*.
 
 The concavity of the \\(T_i\\) means it is optimal to be greedy. Starting at 0, for each extra \\(\delta x\\) of crypto currency we want to trade, we evaluate all derivatives \\(T_i'(0)\\) and choose the highest one, i.e. \\(max \; T_i'(0) \\). This is the most profitable cycle for any initial amount we want to trade. Because the \\(T_i\\) are all piecewise linear, we can keep adding volume to the chosen cycle until the end of the current line segment. We are guaranteed this will be the best deal until the initial segment ends.
 
-Once the current segment ends, \\(\frac{dT_i}{dx}\\) needs to be re-evaluated for the new segment. After we take into account the new (lower) available returns at the new segment (after we already traded \\(\delta x\\) ), it may be that another cycle \\(C_j\\) becomes more profitable than cycle \\(C_i\\) and we repeat the process. We keep doing this while \\(max \; \frac{dT_i}{dx} > 1\\) and \\(T_i(x) > 1\\), beyond this point, trading ceases to be profitable. We may also stop before any desired rate of return, for example 1.05 for a minimum of 5% return, instead of 1.
+Once the current segment ends, \\(\frac{dT_i}{dx}\\) needs to be re-evaluated for the new segment. After we take into account the new (lower) available returns at the new segment (after we already traded \\(\delta x\\) ), it may be that another cycle \\(C_j\\) becomes more profitable than cycle \\(C_i\\) and we repeat the process. We keep doing this while \\(max \; \frac{dT_i}{dx} > 1\\) and \\(T_i(x) > x\\), beyond this point, trading ceases to be profitable. We may also stop before any desired rate of return, for example 1.05 for a minimum of 5% return, instead of 1.
 
 ### Conclusion
 
