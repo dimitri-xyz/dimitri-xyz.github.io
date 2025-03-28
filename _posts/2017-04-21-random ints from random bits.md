@@ -13,7 +13,7 @@ A basic requirement for this lottery is that every ticket must have the same cha
 
 The number of people buying tickets changes from week to week; but no matter how many tickets are sold, the lottery must always be fair. Each week, the wining ticket must be drawn from a uniform distribution over all the tickets sold. You don't want to break the law.
 
-To aid you in executing the lottery you are given a *perfect* source of random bytes. Imagine that by using some oscillators, heat and quantum wizardry Intel has just release a wonderful new chip. This chip will give you as many random bits as you want. Each bit is drawn from a Bernoulli distribution with probability \\(1/2\\). In the javascript world, this is equivalent to a perfect version of `getRandomValues()` or Node.js' `randomBytes()`.
+To aid you in executing the lottery you are given a *perfect* source of random bytes. Imagine that by using some oscillators, heat and quantum wizardry Intel has just release a wonderful new chip. This chip will give you as many random bits as you want. Each bit is drawn from a Bernoulli distribution with probability \\(\frac{1}{2}\\). In the javascript world, this is equivalent to a perfect version of `getRandomValues()` or Node.js' `randomBytes()`.
 
 Armed with your perfect source of random bits you set out to code the software that will draw the winning lottery ticket. Here are a few ways *not* to do it.
 
@@ -80,7 +80,6 @@ This asymmetry makes some outputs more likely than others. For example, zero whi
 Unless \\(N\\) is a power of 2, this will always happen. Just like in the case of remainder bias, we can mitigate the problem by using a large number of bits. If we use a standard 53 bits, the difference in probability between the most likely and the least likely tickets will be \\(2^{-53}\approx \frac{1}{10^{16}}\\). That is virtually undetectable and good for most (non-cryptographic) applications, but this is not a truly uniform distribution. We can do better.
 
 **Warning:** The trick of using more random bits to obtain a smaller bias works if we don't also have to increase the number of equivalence classes \\(N\\), otherwise we might be back where we started.
-
 
 ### Doing it right — Rejection Sampling
 
@@ -208,6 +207,7 @@ function getRandIntInclusive(low, hi){
 var winner = getRandIntInclusive(0, 9)
 console.log(`And the winner is You! Ticket number ${winner} !`)
 ```
+
 (Here's a [haskell version](https://gist.github.com/dimitri-xyz/ba6f6d81a9db39d2a918fb8ecece9a76) of the same code.)
 
 That's all folks! Now, you know how to properly generate uniformly distributed random integers from random bytes. Tricky, isn't it!?

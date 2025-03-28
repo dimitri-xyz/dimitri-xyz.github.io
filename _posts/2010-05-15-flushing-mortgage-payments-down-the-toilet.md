@@ -12,7 +12,7 @@ Many proud home owners live under the impression that they do not flush their mo
 
 Buying a house is a highly leveraged and, therefore, risky bet. Buying a property with a 20% down payment is a bet with 5× leverage. An 8% decrease in the value of the home means that the home owner just lost 5×8 = 40% of his down payment! The calculations that follow should be considered in conjunction with changes in home value or when home prices are expected to remain stable over the long run.
 
-###  How much interest are you paying?
+### How much interest are you paying?
 
 As you pay your mortgage, how much is owed to the bank decreases with time. The home owner only pays interest on the remaining balance, not the whole amount borrowed.
 
@@ -20,7 +20,7 @@ To illustrate this point consider a simple mortgage payment scheme with decreasi
 
 $500,000/(300 payments) = $1,666.67 per month.
 
-The interest accrued during the <em>first</em> period is
+The interest accrued during the *first* period is
 
 500,000 × 0.00407 = $2,037.06.
 
@@ -30,7 +30,7 @@ So, the first month&#8217;s payment is
 
 You owe an initial balance \\(B_{0}\\) of $500,000 when you take out the money. After you make your first payment, at the end of your first month, you will owe
 
-\\(B_{1} = 299/300 × 500,000 = $498,333.33 \\\)
+\\(B_{1}\\) = 299/300 × 500,000 = $498,333.33
 
 At the end of the second month, you will again pay $1,666.67 corresponding to 1/300th of the principal, but this time your remaining balance has decreased to $498,333 and so you will pay a little less interest. The total payment at the end of the second month is given by
 
@@ -50,9 +50,13 @@ during the last month of your mortgage. You will pay a correspondingly very smal
 
 Notice that the amount of interest paid on the first month is 300 times larger than the amount of interest paid on the last month! This large difference makes this scheme impractical for many people who can easily afford the final payments but not the initial ones.
 
-In this decreasing payments scheme, the monthly payments decrease linearly by \\( 0.00407 × 1,666.67 = $ 6.79 \\) per month. Simply adding up all the payments shows that you will end up paying a total of $806,579 on $500,000 of debt. In other words,  1.613 times the original amount.
+In this decreasing payments scheme, the monthly payments decrease linearly by
 
-###  Interest paid through Fixed Payments
+0.00407 × 1,666.67 = $6.79 per month.
+
+Simply adding up all the payments shows that you will end up paying a total of $806,579 on $500,000 of debt. In other words, 1.613 times the original amount.
+
+### Interest paid through Fixed Payments
 
   Most mortgages are paid through fixed (rather than decreasing) monthly payments.
 
@@ -62,7 +66,7 @@ In this decreasing payments scheme, the monthly payments decrease linearly by \\
 
   ![Fixed Payments]({{ site.url }}/assets/fixed-payments1.png)
 
-  Let us calculate what the monthly payments should be. Instead of using the interest rate \\(i\\), we will use the <em>gross </em>interest rate given by \\(r=1+i\\) to simplify the calculation. For the monthly rate in our example above \\(i=0.00407\\) and \\(r=1.00407\\).
+  Let us calculate what the monthly payments should be. Instead of using the interest rate \\(i\\), we will use the *gross* interest rate given by \\(r=1+i\\) to simplify the calculation. For the monthly rate in our example above \\(i=0.00407\\) and \\(r=1.00407\\).
 
   The initial balance is \\(B_0\\). After the first month, the remaining balance will be
 
@@ -84,7 +88,7 @@ In this decreasing payments scheme, the monthly payments decrease linearly by \\
 
   B_3 & = r B_2 - P \\
        & = r ( r B_1 - P) - P \\
-       & = r ( r ( r B_0 - P ) - P) - P) \\
+       & = r ( r ( r B_0 - P ) - P) - P \\
        & = r^3 B_0 - r^2 P - r P - P
 
  \end{align} $$
@@ -103,12 +107,12 @@ Finally, rearranging the formula for \\(P\\)
 
 \\[ P = B_0 \frac{r^n(r - 1)}{r^n - 1}\\]
 
-  This formula is all we need to calculate how much your monthly payments should be. For our $500,000 loan with 5% yearly interest we obtain that \\(P\\)=$2890.69. Simply adding up all 300 payments shows that you will pay a total of $867,207 which is 1.73 times the borrowed amount. Put it another way, each payment is 73% larger, an extra 2890.69 - 1666.67 = $ 1224.02, than it would be for a zero interest rate loan.
+  This formula is all we need to calculate how much your monthly payments should be. For our $500,000 loan with 5% yearly interest we obtain that \\(P\\) = $2890.69. Simply adding up all 300 payments shows that you will pay a total of $867,207 which is 1.73 times the borrowed amount. Put it another way, each payment is 73% larger, an extra 2890.69 - 1666.67 = $1224.02, than it would be for a zero interest rate loan.
 
-  We left out the very important tax breaks. The U.S. government gives a tax break for interest paid on mortgages. If we assume that the home owner is in a 33% tax bracket and can benefit from both federal and state tax incentives. The amount paid in interest is reduced by 2/3. In our example, this means that only \\(\frac{2}{3}\\) × 1224.02 = $ 816.01 is flushed down the toilet each month. Add to this amount the extra costs of owning a home and compare the total to your rent payments. If you are still paying more than the total in rent and you don&#8217;t expect home prices to fall, buying a home may be a good move for you.
+  We left out the very important tax breaks. The U.S. government gives a tax break for interest paid on mortgages. If we assume that the home owner is in a 33% tax bracket and can benefit from both federal and state tax incentives. The amount paid in interest is reduced by 2/3. In our example, this means that only \\(\frac{2}{3}\\) × 1224.02 = $816.01 is flushed down the toilet each month. Add to this amount the extra costs of owning a home and compare the total to your rent payments. If you are still paying more than the total in rent and you don&#8217;t expect home prices to fall, buying a home may be a good move for you.
 
 ###  Conclusion
 
   Don&#8217;t fool yourself into thinking buying a home is always a good investment because you will not be paying rent. Calculate how much interest you will be paying, what tax breaks you will get, the extra costs of owning a property (recurring property tax, insurance, maintenance and depreciation and the one-time costs of closing a deal) add the opportunity cost of not having savings and compare tall hat to your rent payments before making a decision. The $816 dollars above only take into account the interest itself.
 
-  <em>This entry has been updated to include the opportunity cost and make explicit that the calculation above does not include all costs. The layout has also been changed.</em>
+  *This entry has been updated to include the opportunity cost and make explicit that the calculation above does not include all costs. The layout has also been changed.*

@@ -2,6 +2,8 @@
 title: 'Chebyshev’s Inequality — a simple proof'
 date: 2011-01-26T21:34:48+00:00
 layout: page
+permalink: /chebyshevs-inequality/
+mathjax: true
 ---
 To prove Chebyshev’s inequality, we start with the definition of expectation. But instead of using the definition for discrete random variables, we use the definition for continuous random variables. In other words, instead of using the formula
 
