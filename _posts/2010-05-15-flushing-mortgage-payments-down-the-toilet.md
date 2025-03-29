@@ -99,7 +99,7 @@ In short, after each month the remaining balance is being multiplied by the gros
 
 \\( 0 = r^n B_0  - P ( r^{n-1} + r^{n-2} + \ldots + r + 1) \\)
 
-[Calculating the sum]({{ site.url }}/topic-pages/gp-sum) for the standard geometric progression on the right we obtain.
+[Calculating the sum]({{ site.url }}/sum-of-geometric-progression) for the standard geometric progression on the right we obtain.
 
 \\[ 0 = r^n B_0 - P \frac{r^n - 1}{r - 1} \\]
 
