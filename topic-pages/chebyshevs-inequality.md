@@ -18,30 +18,30 @@ where \\(p(y)\\) is the probability density function for \\(Y\\).
 Let us assume that the random variable \\(Y\\) can only take positive values, it follows that:
 
 $$
-\begin{eqnarray*}
+\begin{align*}
 
-E[Y] & = & \int_{-\infty}^{+\infty} y\; p(y)\; dy = \int_{0}^{+\infty} y\; p(y)\; dy \\
+E[Y] & = \int_{-\infty}^{+\infty} y\; p(y)\; dy = \int_{0}^{+\infty} y\; p(y)\; dy \\
 
-     & = & \int_{0}^{a} y\; p(y)\; dy + \int_{a}^{+\infty} y\; p(y)\; dy \\
+     & = \int_{0}^{a} y\; p(y)\; dy + \int_{a}^{+\infty} y\; p(y)\; dy \\
 
-\end{eqnarray*}
+\end{align*}
 $$
 
 
 In the last step, we simply split the integration interval into two, from zero to \\(a\\) and then from \\(a\\) to infinity. We can now substitute the respective smallest value for \\(y\\) in each of those two integrals to obtain an inequality.
 
 $$
-\begin{eqnarray*}
+\begin{align*}
 
-E[Y] & = & \int_{0}^{a} y\; p(y)\; dy + \int_{a}^{+\infty} y\; p(y)\; dy \\
+E[Y] & =  \int_{0}^{a} y\; p(y)\; dy + \int_{a}^{+\infty} y\; p(y)\; dy \\
 
-E[Y] & \geq & \int_{0}^{a} 0\; p(y)\; dy + \int_{a}^{+\infty} a\; p(y)\; dy \\
+E[Y] & \geq  \int_{0}^{a} 0\; p(y)\; dy + \int_{a}^{+\infty} a\; p(y)\; dy \\
 
-E[Y] & \geq & 0 + a\int_{a}^{+\infty} \; p(y)\; dy \\
+E[Y] & \geq  0 + a\int_{a}^{+\infty} \; p(y)\; dy \\
 
-E[Y] & \geq & a \;P(Y\!\! > a)\\
+E[Y] & \geq  a \;P(Y\!\! > a)\\
 
-\end{eqnarray*}
+\end{align*}
 $$
 
 Rearranging this last result we obtain Markov’s inequality:
